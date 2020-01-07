@@ -1,7 +1,6 @@
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:
-  namespace: iot
   name: system:azure-cloud-provider
 rules:
   - apiGroups: ['']
