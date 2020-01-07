@@ -1,6 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  namespace: nodered
   name: node-red
 spec:
   replicas: 1
