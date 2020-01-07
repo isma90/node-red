@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: nodered-data
+spec:
+  accessModes:
+    - ReadWriteMany
+  storageClassName: storage-account
+  resources:
+    requests:
+      storage: 5Gi

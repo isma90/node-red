@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  namespace: iot
+  name: node-red-dashboard
+  labels:
+    component: node-red
+spec:
+  externalTrafficPolicy: Cluster
+  type: LoadBalancer
+  selector:
+    component: node-red
+  ports:
+    - port: 443
+      name: http
+      targetPort: 1880
