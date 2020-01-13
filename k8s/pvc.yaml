@@ -9,4 +9,4 @@ spec:
   storageClassName: storage-account-v2
   resources:
     requests:
-      storage: 30Gi
+      storage: 5Gi
