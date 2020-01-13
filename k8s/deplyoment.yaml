@@ -15,7 +15,10 @@ spec:
     spec:
       containers:
         - name: node-red
-          image: nodered/node-red:1.0.3-2-12
+          image: ismaleiva90/node-red:latest-12
+          env:
+            - name: NO_BIN_LINKS
+              value: "true"
           ports:
             - containerPort: 1880
               name: http
